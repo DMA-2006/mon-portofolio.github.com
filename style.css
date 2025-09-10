@@ -234,7 +234,7 @@ span{
 }
 .Portofolio-box img {
     width: 100%;
- height: 250px;       
+ height: 350px;       
  object-fit: cover;   
  border-radius: 2rem; 
     
@@ -385,6 +385,7 @@ font-size: 1.6rem;
 }
 
 /* Mobiles standards (Android, iPhone 11/12/13/14/15 normal) */
+
 @media (max-width: 600px) {
   html { font-size: 50%; }
 
@@ -406,6 +407,9 @@ font-size: 1.6rem;
 
 /* Téléphones */
 @media (max-width: 768px) {
+    .Portofolio-box img{
+        min-height: 500px;
+    }
     #menu-icon {
         display: block;
     }
