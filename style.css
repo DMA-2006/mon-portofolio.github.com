@@ -234,19 +234,23 @@ span{
 }
 .Portofolio-box img {
     width: 100%;
+ height: 250px;       
+ object-fit: cover;   
+ border-radius: 2rem; 
     
 }
 .Portofolio-box:hover img{
     transform:scale(1.1) ;
     transition: .5s ease;
 }
+
 .Portofolio-box .Portofolio-layer{
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0, .1), var(--main-color));
+    background: linear-gradient(rgba(0,0,0, .1), var(--second-bg-color));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,10 +265,12 @@ span{
 }
 .Portofolio-layer h4{
     font-size: 3rem;
+    
 }
 .Portofolio-layer p{
     font-size:1.6rem;
     margin: 3rem;
+   
 }
 .Portofolio-layer a{
     display: inline-block;
@@ -376,6 +382,26 @@ font-size: 1.6rem;
     .footer {
         padding: 2rem 3%;
     }
+}
+
+/* Mobiles standards (Android, iPhone 11/12/13/14/15 normal) */
+@media (max-width: 600px) {
+  html { font-size: 50%; }
+
+  /* Menu mobile */
+  .navbar a { font-size: 1.8rem; margin: 1.5rem 0; }
+
+  /* Home section */
+  .home { flex-direction: column; text-align: center; }
+  .homme-img { width: 85vw; margin-top: 1.5rem; }
+
+  /* Services et Portfolio */
+  .services-container { grid-template-columns: 1fr; }
+  .Portofolio-container { grid-template-columns: 1fr; }
+  .Portofolio-box img { height: 180px; }
+
+  /* Contact form */
+  .contact form .input-box input { width: 100%; }
 }
 
 /* Téléphones */
